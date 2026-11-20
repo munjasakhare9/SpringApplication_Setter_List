@@ -1,0 +1,58 @@
+package com.demo.model;
+
+import java.util.List;
+
+public class Student {
+	private int id;
+	private String name;
+	private String city;
+	private double percentage;
+	private List<String> hobbies;
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + ", hobbies="
+				+ hobbies + "]";
+	}
+
+	public List<String> getHobbies() {
+		return hobbies;
+	}
+
+	public void setHobbies(List<String> hobbies) {
+		this.hobbies = hobbies;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public double getPercentage() {
+		return percentage;
+	}
+
+	public void setPercentage(double percentage) {
+		this.percentage = percentage;
+	}
+
+}
