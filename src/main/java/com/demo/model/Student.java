@@ -1,26 +1,47 @@
 package com.demo.model;
 
-import java.util.List;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class Student {
 	private int id;
 	private String name;
 	private String city;
 	private double percentage;
-	private List<String> hobbies;
+	// private List<String> hobbies;
+	private Set<String> color = new LinkedHashSet<>();
+
+	// Setter Injection with List
+	/*
+	 * @Override public String toString() { return "Student [id=" + id + ", name=" +
+	 * name + ", city=" + city + ", percentage=" + percentage + ", hobbies=" +
+	 * hobbies + "]"; }
+	 * 
+	 * public List<String> getHobbies() { return hobbies; }
+	 * 
+	 * public void setHobbies(List<String> hobbies) { this.hobbies = hobbies; }
+	 */
+
+	public Set<String> getColor() {
+		return color;
+	}
+
+	public void setColor(Set<String> color) {
+		this.color = color;
+	}
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + ", hobbies="
-				+ hobbies + "]";
+		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + ", color="
+				+ color + "]";
 	}
 
-	public List<String> getHobbies() {
-		return hobbies;
+	public Set<String> getS() {
+		return color;
 	}
 
-	public void setHobbies(List<String> hobbies) {
-		this.hobbies = hobbies;
+	public void setS(Set<String> s) {
+		this.color = s;
 	}
 
 	public int getId() {

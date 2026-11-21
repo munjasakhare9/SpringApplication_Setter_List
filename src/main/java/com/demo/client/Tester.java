@@ -7,8 +7,8 @@ import com.demo.model.Student;
 
 public class Tester {
 	public static void main(String[] args) {
-		ApplicationContext context=new ClassPathXmlApplicationContext("bean.xml");
-		Student s1=context.getBean(Student.class);
+		ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+		Student s1 = context.getBean(Student.class);
 		System.out.println(s1);
 	}
 }
